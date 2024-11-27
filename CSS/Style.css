@@ -1,0 +1,258 @@
+:root{
+    --fondo :#e3f1fdFF;
+    --hover :#583492FF;
+    --focus :#00000080;
+    --colum :#b061faab;
+    --footer:#a9cee4;
+    --qr:#83a1b3;
+}
+#perf{
+    display: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #000;}
+#hoja{
+    border-radius: 10px;
+    width: 50%;
+    background-color: var(--fondo);
+}
+header{
+    display: grid;
+    border-radius: 10px;
+    background-color: #b492a960;
+    align-items: center;
+    height: 190px;
+}
+*{
+    font-family: "Kanit", sans-serif
+}
+*:focus{
+    background-color: var(--focus);
+}
+
+#yo:target{
+    color: rgb(108, 161, 144);
+}
+#ddv{
+    width : 50px;
+    height: 50px;
+}
+header{
+    margin: 0px;
+    display: grid;
+    background-color: #b492a960;
+    align-items: center;
+}
+header span{
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 160px;
+    margin: auto 0px;
+    padding: 0px;
+}
+header span h2{
+    grid-row: 1;
+    grid-column: 2/7;
+}
+
+header span p{
+    grid-column: 4;
+    display: inline;
+    grid-row: 2;
+    margin-right: 5px;
+}
+.info{
+    grid-column: 2;
+    margin-right: 10px;
+}
+header span svg{
+    grid-column: 3;
+    display: inline;
+    grid-row: 2;
+    height: 50px;
+}
+
+header span a{
+    grid-column: 5;
+    grid-row: 2;
+    width: 200px;
+}
+header span pre{
+    margin-right: 20px;
+    margin-top: 0px;
+    grid-column: 2/7;
+}
+a:hover{
+    text-decoration: none;
+    color: var(--hover);
+}
+header img{
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 30px;
+    border-radius: 100%;
+    width : 130px;
+    height: 130px;
+    display: inline;
+}
+.img{
+    float: right;
+    width: 290px;
+    height: 130px;
+    margin-right: 5px;
+}
+#ado{
+    width: 60px;
+}
+footer{
+    background-color: var(--footer);
+    border-radius: 0px 0px 10px 10px;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+}
+p{
+    margin-left: 5px;
+}
+footer #span{
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--qr);
+    justify-items: center;
+    justify-content: center;
+}
+footer #span > p{
+    grid-row: 1;
+    display: block;
+}
+#span > img{
+    grid-row: 3;
+    width: 400px;
+    height: 400px;
+}
+#span > a{
+    grid-row: 2;
+}
+#span:target{
+    display: grid;
+}
+#span:target::after{
+    display: none;
+}
+.imm{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 853px){
+    body{
+    background-color: var(--fondo);
+    }
+    #hoja{
+        border-radius: 0px;
+        width: 100%;
+        background-color: var(--fondo);
+    }
+    header{
+        margin: 0px;
+        justify-content: center;
+        display: flex;
+        background-color: #b492a960;
+        align-items: center;
+    }
+    header span{
+        display: flex;
+    }
+    .ig{
+        display: none;
+    }
+    .imm{
+        margin: 10px;
+        display: block;
+        width: 80px;
+        height:80px;
+    }
+    #perf{
+        display: none;
+    }
+    #pp{
+        display: none;
+    }
+    #perf > *{
+        margin:0px;
+    }
+    #perf:target{
+        display: grid;
+    }
+    #perf h3{
+        grid-column: 1/5;
+    }
+    #perf svg{
+        display: inline;
+        grid-column: 1;
+        grid-row: 3;
+        height: 50px;
+    }
+    #perf .inn{
+        grid-column: 2;
+
+        grid-row: 4;
+    }
+    #perf .odo{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    #perf .a{
+        grid-column: 3;
+        grid-row: 3;
+    }
+    #perf .seshar{
+        grid-column: 3;
+        grid-row: 4;
+    }
+    #perf pre{
+        grid-column: 2/4;
+        grid-row: 5;
+    }
+    .ul{
+        display: grid;
+        margin-bottom: 0px;
+    }
+    .ul > img{
+        margin: 0px;
+        grid-row: 3;
+    }
+    .ul  svg{
+        display: none;
+    }
+    #res{
+        color: #3a0000;
+    }
+    footer{
+        border-radius: 10px;
+    }
+    #open{
+        margin-left: 5px;
+    }
+    #span img{
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+}
+@media (min-width:853px){
+    #hoja{ 
+    width: 60%;  
+    }
+}
