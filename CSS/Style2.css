@@ -139,7 +139,7 @@ footer #span{
     justify-items: center;
     justify-content: center;
 }
-footer #span > a{
+footer #span > #open{
     grid-row: 1;
     display: block;
 }
