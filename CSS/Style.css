@@ -150,7 +150,9 @@ footer #span > p{
     display: none;
 }
 
-
+.ul li{
+    margin-right:10px;
+}
 
 
 
