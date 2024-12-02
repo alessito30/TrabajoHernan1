@@ -257,7 +257,7 @@ footer #span > p{
 
 }
 .material-symbols-outlined {
-    font-size: large;
+    font-size: 30px;
     color: var(--colum);
   font-variation-settings:
   'FILL' 0,
