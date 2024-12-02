@@ -259,6 +259,7 @@ footer #span > p{
 .material-symbols-outlined {
     width: 1rem;
     height: 1rem;
+    color: var(--colum);
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
